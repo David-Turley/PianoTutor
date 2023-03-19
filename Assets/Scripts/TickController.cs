@@ -11,7 +11,7 @@ public class TickController : MonoBehaviour
     public Text nextKeyText;
     public Text scoreText;
     private bool scored = false;
-    private int scoreRangeMs = 800, tickFrequencyMs = 1000;
+    private int scoreRangeMs = 800, tickFrequencyMs = 2000;
 
     private AudioSource tickSound;
 
