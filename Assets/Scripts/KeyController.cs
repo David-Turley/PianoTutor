@@ -4,11 +4,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.InputSystem;
 
 public class KeyController : MonoBehaviour
 {
     private SpriteRenderer sr;
     public bool isWhiteKey;
+    public InputAction pianoControls;
 
     // private start and end times. what variable type for real time?
 
@@ -23,6 +25,31 @@ public class KeyController : MonoBehaviour
 
     private TextMeshPro myText;
 
+    private void OnEnable()
+    {
+        pianoControls.performed += OnPerformed;
+        pianoControls.canceled += OnCancelled;
+        pianoControls.Enable();
+    }
+
+    private void OnDisable()
+    {
+        pianoControls.performed -= OnPerformed;
+        pianoControls.canceled -= OnCancelled;
+        pianoControls.Disable();
+    }
+
+    void OnPerformed(InputAction.CallbackContext ctx) 
+    {
+        sr.color = Color.yellow;
+        lastPressed = DateTime.Now;
+    }
+
+    void OnCancelled(InputAction.CallbackContext ctx) 
+    {
+        lastReleased = DateTime.Now;
+        SetDefaultColor();
+    }
     //private Text keyLabel;
 
     // Start is called before the first frame update
@@ -42,19 +69,21 @@ public class KeyController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(requiredKey))
-        {
-            sr.color = Color.yellow;
+        
 
-            lastPressed = DateTime.Now;
-        }
+        //if (Input.GetKeyDown(requiredKey))
+        //{
+        //    sr.color = Color.yellow;
 
-        if (Input.GetKeyUp(requiredKey))
-        {
-            SetDefaultColor();
+        //    lastPressed = DateTime.Now;
+        //}
 
-            lastReleased = DateTime.Now;
-        }
+        //if (Input.GetKeyUp(requiredKey))
+        //{
+        //    SetDefaultColor();
+
+        //    lastReleased = DateTime.Now;
+        //}
     }
 
     public void SetColor(Color c)

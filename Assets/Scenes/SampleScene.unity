@@ -629,6 +629,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isWhiteKey: 0
+  pianoControls:
+    m_Name: Piano Controls
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 0d95a93f-0e1f-4601-8c4b-3b84373eaea5
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: 17006bfd-bde3-4f55-a48f-badecd8b79f8
+      m_Path: <Keyboard>/w
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Piano Controls
+      m_Flags: 0
+    - m_Name: 
+      m_Id: aa4383e5-43b1-44b8-86d8-ea7b9bae71ef
+      m_Path: <MidiDevice>/note073
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Piano Controls
+      m_Flags: 0
   requiredKey: 119
 --- !u!222 &644717513
 CanvasRenderer:
@@ -990,6 +1014,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isWhiteKey: 0
+  pianoControls:
+    m_Name: Piano Controls
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 6e5e1e81-22f3-435e-b91d-df323f4ee701
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: 80a2ed7e-f1ec-411f-acc4-dff1beb388fe
+      m_Path: <MidiDevice>/note080
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Piano Controls
+      m_Flags: 0
+    - m_Name: 
+      m_Id: 50b4b537-120b-4ea1-b96f-45b1553a8df0
+      m_Path: <Keyboard>/y
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Piano Controls
+      m_Flags: 0
   requiredKey: 121
 --- !u!222 &750808955
 CanvasRenderer:
@@ -1272,6 +1320,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isWhiteKey: 0
+  pianoControls:
+    m_Name: Piano Controls
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: bef824dc-9e79-462b-b3d9-f16358e7b168
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: c13c968c-a91d-4b0d-8b17-0c004daa87ab
+      m_Path: <Keyboard>/t
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Piano Controls
+      m_Flags: 0
+    - m_Name: 
+      m_Id: 00ebb290-17f0-495e-b1fe-8da63dd77c2a
+      m_Path: <MidiDevice>/note078
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Piano Controls
+      m_Flags: 0
   requiredKey: 116
 --- !u!222 &956292351
 CanvasRenderer:
@@ -1732,6 +1804,7 @@ GameObject:
   - component: {fileID: 1334222376}
   - component: {fileID: 1334222378}
   - component: {fileID: 1334222379}
+  - component: {fileID: 1334222377}
   m_Layer: 0
   m_Name: AKey1
   m_TagString: key
@@ -1790,6 +1863,36 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1334222377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1334222375}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: 0}
+  m_NotificationBehavior: 0
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents: []
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: 
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
 --- !u!114 &1334222378
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1803,6 +1906,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isWhiteKey: 1
+  pianoControls:
+    m_Name: Piano Controls
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 6775c38e-b4e2-47f9-9c3c-71fd4a5d307a
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: 0e8f4498-2819-4f27-80c2-b5ae7b78e8ae
+      m_Path: <Keyboard>/h
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Piano Controls
+      m_Flags: 0
+    - m_Name: 
+      m_Id: ed8c0b71-ca2c-4dd5-a752-fe6cabbb2cfd
+      m_Path: <MidiDevice>/note081
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Piano Controls
+      m_Flags: 0
   requiredKey: 104
 --- !u!222 &1334222379
 CanvasRenderer:
@@ -1915,6 +2042,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isWhiteKey: 1
+  pianoControls:
+    m_Name: Piano Controls
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 31ca53d9-dbc9-4335-a718-cbe33b2ab98a
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: 9d7e5507-f008-4790-b15b-befcf135f3f0
+      m_Path: <Keyboard>/g
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Piano Controls
+      m_Flags: 0
+    - m_Name: 
+      m_Id: 4853c8bb-aeed-40dd-a5f2-4e964b32572f
+      m_Path: <MidiDevice>/note079
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Piano Controls
+      m_Flags: 0
   requiredKey: 103
 --- !u!222 &1347099111
 CanvasRenderer:
@@ -2391,6 +2542,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isWhiteKey: 1
+  pianoControls:
+    m_Name: Piano Controls
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: a4466e48-ee38-4d6f-a720-ac2fa8fdd3ed
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: 481bcfb0-cda5-4f8b-9b86-a84cd255e6a9
+      m_Path: <Keyboard>/j
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Piano Controls
+      m_Flags: 0
+    - m_Name: 
+      m_Id: 930a7272-5fd7-4256-9e27-b4c71657f99b
+      m_Path: <MidiDevice>/note083
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Piano Controls
+      m_Flags: 0
   requiredKey: 106
 --- !u!222 &1506532866
 CanvasRenderer:
@@ -2503,6 +2678,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isWhiteKey: 0
+  pianoControls:
+    m_Name: Piano Controls
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: f0049302-9018-4f8f-9ada-f400773fcfbe
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: c3c932b1-cd27-4267-afbb-c7708d48689d
+      m_Path: <MidiDevice>/note075
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Piano Controls
+      m_Flags: 0
+    - m_Name: 
+      m_Id: e3f3d9f4-c118-410b-9442-5df36d0cba4e
+      m_Path: <Keyboard>/e
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Piano Controls
+      m_Flags: 0
   requiredKey: 101
 --- !u!222 &1549199063
 CanvasRenderer:
@@ -2615,6 +2814,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isWhiteKey: 1
+  pianoControls:
+    m_Name: Piano Controls
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 290f4508-c2b2-43a2-9a14-4f3e2c909b0f
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: f401b945-bf7b-4333-82f5-379d98fee9f9
+      m_Path: <MidiDevice>/note072
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Piano Controls
+      m_Flags: 0
+    - m_Name: 
+      m_Id: 1e9f2501-d142-4976-a360-93d60045881c
+      m_Path: <Keyboard>/a
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Piano Controls
+      m_Flags: 0
   requiredKey: 97
 --- !u!222 &1641228111
 CanvasRenderer:
@@ -2897,6 +3120,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isWhiteKey: 1
+  pianoControls:
+    m_Name: Piano Controls
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 77695590-7e50-46a0-8ea7-9df872b85f62
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: ef54b2ab-cb92-4864-8d9b-aaef17c2e1ce
+      m_Path: <MidiDevice>/note074
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Piano Controls
+      m_Flags: 0
+    - m_Name: 
+      m_Id: 8121599a-0e69-47b0-8824-472ff4ef6d05
+      m_Path: <Keyboard>/s
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Piano Controls
+      m_Flags: 0
   requiredKey: 115
 --- !u!222 &1708581205
 CanvasRenderer:
@@ -3179,6 +3426,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isWhiteKey: 1
+  pianoControls:
+    m_Name: Piano Controls
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 782c2f0d-0d41-4cb4-96c0-daaebddd5f53
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: 797c9d24-e2ad-4c87-86e3-ff27026654a4
+      m_Path: <MidiDevice>/note077
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Piano Controls
+      m_Flags: 0
+    - m_Name: 
+      m_Id: 471848aa-0380-4858-a5c2-3c33569edfeb
+      m_Path: <Keyboard>/f
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Piano Controls
+      m_Flags: 0
   requiredKey: 102
 --- !u!222 &1783605326
 CanvasRenderer:
@@ -3631,6 +3902,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isWhiteKey: 1
+  pianoControls:
+    m_Name: Piano Controls
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 1e1c8f5d-57a0-4125-bdc2-988de369089b
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: aff10509-a86f-4ca9-ab94-4a8a0edd0d61
+      m_Path: <MidiDevice>/note076
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Piano Controls
+      m_Flags: 0
+    - m_Name: 
+      m_Id: c98c5470-4434-44c5-a4fe-0c3d8a507aba
+      m_Path: <Keyboard>/d
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Piano Controls
+      m_Flags: 0
   requiredKey: 100
 --- !u!222 &2012583015
 CanvasRenderer:
@@ -3743,6 +4038,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isWhiteKey: 0
+  pianoControls:
+    m_Name: Piano Controls
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 00635a8b-c36b-45cf-a97c-441488f48e9f
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: 0c10cb1d-0704-4259-b3ae-8e73050a3886
+      m_Path: <Keyboard>/u
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Piano Controls
+      m_Flags: 0
+    - m_Name: 
+      m_Id: 2e712725-e136-4a3c-8ba6-f9c3160f566a
+      m_Path: <MidiDevice>/note082
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Piano Controls
+      m_Flags: 0
   requiredKey: 117
 --- !u!222 &2039724212
 CanvasRenderer:

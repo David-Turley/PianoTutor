@@ -40,7 +40,7 @@ public class TickController : MonoBehaviour
     private void DidHit() 
     {
         score = score + 1;
-        Debug.Log("Score increased: " + score.ToString());
+        //Debug.Log("Score increased: " + score.ToString());
 
         scored = true;
     }
@@ -49,7 +49,7 @@ public class TickController : MonoBehaviour
     private void MissedHit() 
     {
         scored = true;
-        Debug.Log("Failed to score.");
+        //Debug.Log("Failed to score.");
     }
 
     public void SetScoreRange(int ms)
